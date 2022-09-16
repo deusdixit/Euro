@@ -13,7 +13,10 @@ public final class Euro {
     private final DecimalFormat df = new DecimalFormat( "###.## €" );
 
 
-
+    /**
+     * Constructs a new Euro instance with the specified value.
+     * @param value - the value of the new Euro instance
+     */
     private Euro(double value) {
         if ( value < 0 ) {
             throw new IllegalArgumentException("Keine negativen Werte erlaubt.");
